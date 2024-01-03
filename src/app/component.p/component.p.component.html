@@ -1,0 +1,34 @@
+<h3>COMPONENT P</h3>
+<p>demonstration of how data is transfered to  <span class="highlighted">COMPONENT Q</span> while navigating to it.
+  <br> In this case we are navigating to the <span class="highlighted">COMPONENT Q</span> and trasnfereing following data to <span class="highlighted">COMPONENT Q</span>.
+  <br> We are supplying the data as <span class="highlighted">NAVIGATION EXTRAS</span> a built in feature of Angular 15
+</p>
+<p></p>
+<form (ngSubmit)="navigate()" class="container">
+    <div class="form-group mb-3">
+      <label for="name">ID</label>
+      <input type="text" id="ID" name="ID" [(ngModel)]="formData.id" class="form-control">
+    </div>
+  
+    <div class="form-group mb-3">
+      <label for="email">LABEL</label>
+      <input type="email" id="LABEL" name="LABEL" [(ngModel)]="formData.label" class="form-control">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="email">ROLE</label>
+        <input type="email" id="ROLE" name="ROLE" [(ngModel)]="formData.role" class="form-control">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="email">PID</label>
+        <input type="email" id="PID" name="PID" [(ngModel)]="formData.pid" class="form-control">
+    </div>
+
+    <div class="form-group mb-3">
+        <label for="email">GROUP ID</label>
+        <input type="email" id="GID" name="GID" [(ngModel)]="formData.gid" class="form-control">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">GO TO COMPONENT Q</button>
+</form>
