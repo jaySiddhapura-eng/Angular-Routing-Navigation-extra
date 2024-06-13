@@ -24,6 +24,6 @@ RUN ng build --configuration=production
 
 FROM nginx:latest
 COPY --from=build app/dist/navi-data /usr/share/nginx/html
-COPY /nginx.conf  nginx/default.conf
+COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 
