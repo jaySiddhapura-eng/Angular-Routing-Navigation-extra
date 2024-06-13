@@ -12,7 +12,7 @@
 
 
 # with following build the production grade build happnes which is more optimied
-and nginx server being used to serve. 
+# and nginx server being used to serve. 
 FROM node:20.14.0 as build
 WORKDIR /app
 
