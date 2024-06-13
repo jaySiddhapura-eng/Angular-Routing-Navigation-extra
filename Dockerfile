@@ -24,4 +24,4 @@ RUN ng build --configuration=production
 
 FROM nginx:latest
 COPY --from=build app/dist/navi-data /usr/share/nginx/html
-EXPOSE 80
+EXPOSE 8080
