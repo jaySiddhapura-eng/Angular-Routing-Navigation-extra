@@ -16,6 +16,8 @@
 FROM node:20.14.0 as build
 WORKDIR /app
 
+ENV HOST 0.0.0.0
+
 RUN npm install -g @angular/cli
 COPY package.json package-lock.json ./
 RUN npm ci
